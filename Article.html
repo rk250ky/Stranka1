@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Article.css" media="screen">
+    <link rel="stylesheet" href="Stylesheetprint.css" media="print">
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+
+
+<header>
+
+    <a href="Menu.html"><img src="Pictures/image.png" class="header-logo" alt="logo"> </a>
+    <div class="header-right">
+        <div class="headernormaltext"><a href="Earnings.html">Earnings</a></div>
+        <div class="headernormaltext"><a href="Article.html">Survey</a></div>
+        <div class="dropdown">Games
+            <div class="dropdown-content">
+                <a href="Dota2.html">Dota2</a>
+                <a href="CsGo.html">CS:GO</a>
+
+            </div>
+        </div>
+
+        <div class="dropdown">Tournaments
+            <div class="dropdown-content">
+                <a href="TournamentsDota.html">Dota2</a>
+                <a href="TournamentsCSGO.html">CS:GO</a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+    <form id="formmenu" onreset="tablereset()">
+        <!--    ////////////////////////////name/////////////////////////////////-->
+        <div class="labeltext">
+            <label for="name"> Name (4 to 12 characters):</label>
+
+            <input type="text" id="name" name="name" required
+                   minlength="4" maxlength="12" size="18" placeholder="Enter your name *">
+        </div>
+
+
+        <!--////////////////////////////email/////////////////////////-->
+        <div class="labeltext">
+            <label for="email">Enter your email:</label>
+
+            <input type="email" id="email"
+                   pattern=".+@+.+" size="30" required placeholder="Enter your email *">
+        </div>
+        <!--        /////////////////////////datalist/////////////////////////-->
+        <div class="labeltext">
+            <label for="Gender">Gender:</label>
+            <input type="text" minlength="4" list="Gender-list" id="Gender" name="Gender"
+                   placeholder="Enter your gender *" required/>
+
+            <datalist id="Gender-list">
+                <option value="Male">
+                <option value="Female">
+                <option value="Robot">
+            </datalist>
+        </div>
+        <!--    ////////////////////////url///////////////////////////////-->
+        <div class="labeltext">
+            <label for="url">Enter an https:// URL:</label>
+
+            <input type="url" name="url" id="url"
+                   placeholder="https://example.com"
+                   pattern="https://.*" size="35"
+            >
+        </div>
+
+
+        <!--    //////////////////////////////radio///////////////////////////////-->
+        <div class="labeltext">
+            <label><a>What game do you play the most :</a></label>
+
+            <div>
+                <input type="radio" id="Cs:Go" name="Gameplayedthemost" value="Cs:go"
+                >
+                <label for="Cs:Go">Cs:go</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Dota2" name="Gameplayedthemost" value="Dota2">
+                <label for="Dota2">Dota2</label>
+            </div>
+
+            <div>
+                <input type="radio" id="LoL" name="Gameplayedthemost" value="LoL">
+                <label for="LoL">LoL</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Valorant" name="Gameplayedthemost" value="Valorant">
+                <label for="Valorant">Valorant</label>
+            </div>
+            <div>
+                <input type="radio" id="Pacman" name="Gameplayedthemost" value="Pac man">
+                <label for="Pacman">Pac man</label>
+            </div>
+            <div>
+                <input type="radio" id="Other" name="Gameplayedthemost" value="Other" checked>
+                <label for="Other">Other</label>
+            </div>
+        </div>
+        <!--    //////////////////////////////radio///////////////////////////////-->
+        <div class="labeltext">
+            <label><a>What type of games do you play:</a></label>
+
+            <div>
+                <input type="radio" id="Fps" name="Typeofgame" value="Fps">
+                <label for="Fps">Fps</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Moba" name="Typeofgame" value="Moba">
+                <label for="Moba">Moba</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Strategy" name="Typeofgame" value="Strategy">
+                <label for="Strategy">Strategy</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Sandbox" name="Typeofgame" value="Sandbox">
+                <label for="Sandbox">Sandbox</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Battleroyale" name="Typeofgame" value="Battle royale">
+                <label for="Battleroyale">Battle royale</label>
+            </div>
+            <div>
+                <input type="radio" id="Others" name="Typeofgame" value="Other" checked>
+                <label for="Other">Other</label>
+            </div>
+        </div>
+        <!--    /////////////////////checkbox///////////////////////-->
+        <div class="labeltext">
+            <div class="labels">
+                <label class="labels" for="Doyoubuygames"><a>Do you buy games?</a></label>
+                <input type="checkbox" name="Doyoubuygames" id="Doyoubuygames" onclick="table()">
+            </div>
+        </div>
+
+        <!--    /////////////////////radio//////////////////-->
+        <div id="text" class="checked">
+            <label><a>The last time you bought the game was :</a></label>
+
+            <div>
+                <input type="radio" id="1weeks" name="Boughtgame" value="1 week" checked>
+                <label for="1weeks">1 week ago</label>
+            </div>
+
+            <div>
+                <input type="radio" id="2weeks" name="Boughtgame" value="2 week">
+                <label for="2weeks">2 weeks ago</label>
+            </div>
+
+            <div>
+                <input type="radio" id="3weeks" name="Boughtgame" value="3 weeks">
+                <label for="3weeks">3 weeks ago</label>
+            </div>
+
+            <div>
+                <input type="radio" id="5months" name="Boughtgame" value="5 months">
+                <label for="5months">5 months ago</label>
+            </div>
+            <div>
+                <input type="radio" id="1year" name="Boughtgame" value="1 year">
+                <label for="1year">1 year ago</label>
+            </div>
+
+
+        </div>
+
+        <!--    /////////////////////text area///////////////////-->
+        <div class="labeltext">
+
+            <label class="textarea label" for="story"><a>Tell us your opinion on games you play:</a></label>
+        </div>
+        <div>
+    <textarea id="story" name="story"
+              rows="9" cols="40" required placeholder="Write somethink here ..." maxlength="500"></textarea></div>
+        <!--    /////////////////////buttons/////////////////-->
+        <button class="button"
+                type="submit">
+            Send
+        </button>
+
+        <button class="button"
+                              type="reset" >
+        Reset
+
+    </button>
+
+
+    </form>
+
+    <h3>Visitors Record :</h3>
+    <div id="opinionsContainer"  class="container"></div>
+
+</main>
+
+
+<footer>
+    <p class="footer-left">Autor : Richard KovaÄ¾ </p>
+    <p class="footer-left">E-mail: <a
+            href="mailto:richardkoval0@gmail.com?Subject=SprÃ¡va"><span>richardkoval0@gmail.com</span> </a></p>
+    <p class="footer-right">DÃ¡tum vytvorenia: 03.03.2020 </p>
+
+</footer>
+
+
+
+<script id="mTmplOneOpinion" type="text/template">
+    <section>
+
+        <div class="opinion">
+        <h3>{{Name}} </h3>
+            <div class="text">Posted on : {{Created}}</div>
+        <div class="text">Email : {{Email}}</div>
+        <div class="text">Gender : {{Gender}}</div>
+        <div class="text">Type of game played most : {{Typeofgame}}</div>
+        <div class="text">Game played most : {{Gameplayedmost}}</div>
+        <div class="text">Do you buy games : {{Boughtgame}}</div>
+        <div class="text">When did you bought last game : {{RadioBoughtgame}}</div>
+            <div class="text">Your opinion :</div>
+        <div class="textopinion">{{Textbox}}</div>
+        </div>
+
+    </section>
+</script>
+
+
+
+
+
+<script src="javascriptArticle.js"></script>
+
+
+
+
+</body>
+</html>

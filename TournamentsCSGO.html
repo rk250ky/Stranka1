@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Stylesheet.css" media="screen">
+    <link rel="stylesheet" href="Stylesheetprint.css" media="print">
+    <meta charset="UTF-8">
+    <title>Tournaments</title>
+</head>
+<body>
+
+<header>
+
+    <a href="Menu.html"><img src="Pictures/image.png" class="header-logo" alt="logo"> </a>
+    <div class="header-right">
+        <div class="headernormaltext"><a href="Earnings.html">Earnings</a></div>
+        <div class="headernormaltext"><a href="Article.html">Survey</a></div>
+        <div class="dropdown">Games
+            <div class="dropdown-content">
+                <a href="Dota2.html">Dota2</a>
+                <a href="CsGo.html">CS:GO</a>
+
+            </div>
+        </div>
+
+        <div class="dropdown">Tournaments
+            <div class="dropdown-content">
+                <a href="TournamentsDota.html">Dota2</a>
+                <a href="TournamentsCSGO.html">CS:GO</a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+    <h1>Tournaments</h1>
+
+    <div class="table">
+
+        <table id="Tournaments">
+
+            <tr>
+                <th>Tournament</th>
+                <th>Date</th>
+                <th>Prize</th>
+                <th><abbr title="Number of Participating Teams or Players">P.</abbr></th>
+                <th>Location</th>
+                <th>Winner</th>
+                <th>Runner-up</th>
+            </tr>
+            <tr>
+                <td>BLAST Premier: Fall 2020</td>
+                <td>	Dec 8 - 13, 2020</td>
+                <td>$750,000</td>
+                <td>8</td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+            </tr>
+            <tr>
+                <td> CS:GO Major Championship Autumn 2020</td>
+                <td>Nov 2 - 15, 2020</td>
+                <td>	$1,000,000</td>
+                <td>24</td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+            </tr>
+            <tr>
+                <td> BLAST Premier: Fall 2020 Regular Season</td>
+                <td>	Oct 15 - 31, 2020</td>
+                <td>$300,000</td>
+                <td>12</td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+            </tr>
+            <tr>
+                <td> ESL Pro League Season 12</td>
+                <td>Aug 31 - Oct 11, 2020</td>
+                <td>	$750,000</td>
+                <td>24</td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+            </tr>
+            <tr>
+                <td> Intel Extreme Masters XV - Melbourne</td>
+                <td>Aug 17 - 23, 2020</td>
+                <td>	$250,000</td>
+                <td>16</td>
+                <td>Melbourne <img class="Nations-Tournament" src="Pictures/au.png" alt="AU" title="Australia"></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+                <td><abbr title="To Be Decided">.TBD</abbr></td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div class="t">
+        <canvas id="Canvas" height="350">
+
+        </canvas>
+        <script>
+            var c = document.getElementById("Canvas");
+            var ctx = c.getContext("2d");
+            var d = document.getElementById("Canvas");
+            var dtx= d.getContext("2d");
+
+
+            ctx.fillStyle = "blue";
+            ctx.strokeStyle = "transparent";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI,true);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(95,140,60,0,2*Math.PI,true);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+            ctx.beginPath();
+
+            ctx.arc(95,250,70,0,2*Math.PI,true);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+
+            dtx.fillStyle = "black";
+            dtx.strokeStyle = "transparent";
+
+            dtx.beginPath();
+            dtx.arc(110,35,8,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(80,35,8,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(95,50,5,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+
+
+            dtx.beginPath();
+            dtx.arc(100,70,5,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(85,70,5,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(75,60,5,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(110,60,5,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(95,110,4,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(95,130,5,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(95,150,6,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+            dtx.beginPath();
+            dtx.arc(95,170,7,20,2*Math.PI,true);
+            dtx.closePath();
+            dtx.fill();
+            dtx.stroke();
+
+        </script>
+
+    </div>
+
+</main>
+<footer>
+    <p class="footer-left">Autor : Richard KovaÄ¾ </p>
+    <p class="footer-left">E-mail: <a
+            href="mailto:richardkoval0@gmail.com?Subject=SprÃ¡va"><span>richardkoval0@gmail.com</span> </a></p>
+    <p class="footer-right">DÃ¡tum vytvorenia: 03.03.2020 </p>
+
+</footer>
+</body>
+</html>
